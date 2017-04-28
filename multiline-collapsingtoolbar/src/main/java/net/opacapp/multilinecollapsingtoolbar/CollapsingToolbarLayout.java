@@ -1321,4 +1321,16 @@ public class CollapsingToolbarLayout extends FrameLayout {
                     Math.abs(verticalOffset) / (float) expandRange);
         }
     }
+
+    public CollapsingTextHelper getmCollapsingTextHelper() {
+        return mCollapsingTextHelper;
+    }
+
+    public void setExpandedTextSize(float size) {
+        mCollapsingTextHelper.setExpandedTextSize(size);
+    }
+
+    public float getExpandedTextSize() {
+        return mCollapsingTextHelper.getExpandedTextSize();
+    }
 }
